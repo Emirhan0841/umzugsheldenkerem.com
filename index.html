@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Umzugshelden Kerem – Umzüge, Transport & Montage</title>
+  <meta name="description" content="Umzugshelden Kerem: Stressfrei umziehen mit Profis. Privatumzug, Firmenumzug, Transport, Möbelmontage, Entrümpelung. Unverbindliches Angebot anfragen." />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS (only what Tailwind doesn't cover) -->
+  <link rel="stylesheet" href="./css/custom.css" />
+</head>
+
+<body class="bg-paper text-ink">
+  <!-- Top bar -->
+  <div class="border-b border-line">
+    <div class="mx-auto max-w-7xl px-4 py-2 sm:px-6 lg:px-8">
+      <div class="flex flex-wrap items-center justify-between gap-3 text-sm text-ink/80">
+        <div class="flex items-center gap-3">
+          <span class="inline-flex items-center gap-2">
+            <span class="h-2 w-2 rounded-full bg-emerald-500"></span>
+            Verfügbar für Umzüge & Transporte
+          </span>
+          <span class="hidden sm:inline text-ink/30">|</span>
+          <span class="hidden sm:inline">Kurzfristige Termine möglich</span>
+        </div>
+        <div class="flex items-center gap-4">
+          <a class="hover:underline" href="tel:+4915208904469">Telefon: 0152 08904469</a>
+          <a class="hover:underline" href="mailto:info@umzugshelden.de">E-Mail: info@umzugshelden.de</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-paper/85 backdrop-blur border-b border-line">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <a href="#top" class="flex items-center gap-3">
+          <img src="./assets/logo.jpeg" alt="Umzugshelden Kerem Logo" class="h-9 w-9 rounded-full border border-line object-cover" />
+          <div class="leading-tight">
+            <div class="font-semibold tracking-tight">Umzugshelden</div>
+            <div class="text-xs text-muted -mt-0.5">Kerem</div>
+          </div>
+        </a>
+
+        <nav class="hidden md:flex items-center gap-7 text-sm">
+          <a class="hover:text-ink/70" href="#leistungen">Leistungen</a>
+          <a class="hover:text-ink/70" href="#ablauf">Ablauf</a>
+          <a class="hover:text-ink/70" href="#preise">Preise</a>
+          <a class="hover:text-ink/70" href="#bewertungen">Bewertungen</a>
+          <a class="hover:text-ink/70" href="#kontakt">Kontakt</a>
+          <a href="#angebot" class="inline-flex items-center rounded-full bg-ink px-4 py-2 text-paper shadow-soft hover:opacity-90">
+            Angebot anfragen
+          </a>
+        </nav>
+
+        <button id="menuBtn" class="md:hidden inline-flex items-center justify-center rounded-xl border border-line px-3 py-2">
+          <span class="sr-only">Menü</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" class="text-ink">
+            <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile menu -->
+      <div id="mobileMenu" class="md:hidden hidden pb-4">
+        <div class="grid gap-2 text-sm">
+          <a class="rounded-xl border border-line px-4 py-3 hover:bg-black/[0.03]" href="#leistungen">Leistungen</a>
+          <a class="rounded-xl border border-line px-4 py-3 hover:bg-black/[0.03]" href="#ablauf">Ablauf</a>
+          <a class="rounded-xl border border-line px-4 py-3 hover:bg-black/[0.03]" href="#preise">Preise</a>
+          <a class="rounded-xl border border-line px-4 py-3 hover:bg-black/[0.03]" href="#bewertungen">Bewertungen</a>
+          <a class="rounded-xl border border-line px-4 py-3 hover:bg-black/[0.03]" href="#kontakt">Kontakt</a>
+          <a class="rounded-xl bg-ink px-4 py-3 text-paper text-center shadow-soft hover:opacity-90" href="#angebot">Angebot anfragen</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="top">
+    <section class="relative overflow-hidden">
+      <div class="absolute inset-0">
+        <div class="absolute -top-24 -right-24 h-72 w-72 rounded-full bg-black/[0.06] blur-3xl"></div>
+        <div class="absolute -bottom-28 -left-24 h-72 w-72 rounded-full bg-black/[0.06] blur-3xl"></div>
+      </div>
+
+      <div class="relative mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
+        <div class="grid items-center gap-10 lg:grid-cols-2">
+          <div>
+            <div class="inline-flex items-center gap-2 rounded-full border border-line bg-paper px-3 py-1 text-sm text-ink/80">
+              <span class="h-2 w-2 rounded-full bg-emerald-500"></span>
+              Schnell. Sorgfältig. Transparent.
+            </div>
+
+            <h1 class="mt-5 text-4xl font-semibold tracking-tight sm:text-5xl">
+              Stressfrei umziehen – mit <span class="underline decoration-black/20 underline-offset-8">Umzugshelden</span>.
+            </h1>
+            <p class="mt-5 text-base leading-relaxed text-muted sm:text-lg">
+              Privatumzug, Firmenumzug, Transport und Montage – zuverlässig geplant, sauber ausgeführt.
+              Wir kümmern uns um das Tragen, Sichern und Ankommen.
+            </p>
+
+            <div class="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
+              <a href="#angebot" class="inline-flex items-center justify-center rounded-2xl bg-ink px-6 py-3 text-paper shadow-soft hover:opacity-90">
+                Kostenloses Angebot
+              </a>
+              <a href="#leistungen" class="inline-flex items-center justify-center rounded-2xl border border-line px-6 py-3 hover:bg-black/[0.03]">
+                Leistungen ansehen
+              </a>
+            </div>
+
+            <div class="mt-8 grid grid-cols-2 gap-4 sm:flex sm:flex-wrap">
+              <div class="rounded-2xl border border-line p-4">
+                <div class="text-2xl font-semibold">4.9/5</div>
+                <div class="text-sm text-muted">Kundenzufriedenheit</div>
+              </div>
+              <div class="rounded-2xl border border-line p-4">
+                <div class="text-2xl font-semibold">24–48h</div>
+                <div class="text-sm text-muted">Rückmeldung</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div class="grain relative overflow-hidden rounded-3xl border border-line bg-white shadow-soft">
+              <div class="grid gap-0 sm:grid-cols-2">
+                <div class="p-8">
+                  <img src="./assets/logo.jpeg" alt="Umzugshelden Kerem" class="h-16 w-16 rounded-2xl border border-line object-cover" />
+                  <p class="mt-4 text-sm text-muted">
+                    “Professioneller Umzug – ohne Chaos. Wir arbeiten strukturiert, vorsichtig und mit klarer Kommunikation.”
+                  </p>
+                  <div class="mt-6 rounded-2xl border border-line p-4">
+                    <div class="text-sm font-medium">Typische Einsätze</div>
+                    <ul class="mt-2 space-y-2 text-sm text-muted">
+                      <li class="flex items-start gap-2">
+                        <span class="mt-1 h-1.5 w-1.5 rounded-full bg-ink/60"></span>
+                        1–4 Zimmer Umzüge
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="mt-1 h-1.5 w-1.5 rounded-full bg-ink/60"></span>
+                        Büros / Praxen / Lager
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="mt-1 h-1.5 w-1.5 rounded-full bg-ink/60"></span>
+                        Möbelmontage & Entsorgung
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="relative min-h-[280px] border-t border-line sm:border-t-0 sm:border-l">
+                  <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(0,0,0,.06),transparent_60%)]"></div>
+                  <div class="relative flex h-full flex-col justify-between p-8">
+                    <div>
+                      <div class="text-sm font-medium">Sofortkontakt</div>
+                      <div class="mt-2 space-y-2 text-sm text-muted">
+                        <a class="block hover:underline" href="tel:+4915208904469">0152 08904469</a>
+                        <a class="block hover:underline" href="mailto:info@umzugshelden.de">info@umzugshelden.de</a>
+                      </div>
+                    </div>
+                    <div class="rounded-2xl bg-ink p-5 text-paper">
+                      <div class="text-sm font-medium">Tipp</div>
+                      <p class="mt-1 text-sm text-paper/80">
+                        Je mehr Infos (Etage, Aufzug, Haltezone, Möbel), desto genauer das Angebot.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-6 grid gap-4 sm:grid-cols-3">
+              <div class="rounded-2xl border border-line p-4">
+                <div class="text-sm font-medium">Sicher</div>
+                <div class="mt-1 text-sm text-muted">Schutzmaterial, Gurte, sauberes Handling</div>
+              </div>
+              <div class="rounded-2xl border border-line p-4">
+                <div class="text-sm font-medium">Planbar</div>
+                <div class="mt-1 text-sm text-muted">Klare Zeiten, klare Absprachen</div>
+              </div>
+              <div class="rounded-2xl border border-line p-4">
+                <div class="text-sm font-medium">Flexibel</div>
+                <div class="mt-1 text-sm text-muted">Auch kurzfristig, je nach Kapazität</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leistungen -->
+    <section id="leistungen" class="border-t border-line">
+      <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+        <div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <h2 class="text-3xl font-semibold tracking-tight">Leistungen</h2>
+            <p class="mt-2 text-muted">Modular buchbar – von “nur Transport” bis “Komplettumzug”.</p>
+          </div>
+          <a href="#angebot" class="inline-flex items-center justify-center rounded-2xl border border-line px-5 py-3 hover:bg-black/[0.03]">
+            Angebot anfragen
+          </a>
+        </div>
+
+        <div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <article class="rounded-3xl border border-line p-6 shadow-sm hover:shadow-soft transition-shadow">
+            <div class="flex items-start justify-between gap-4">
+              <h3 class="text-lg font-semibold">Privatumzug</h3>
+              <span class="rounded-full border border-line px-3 py-1 text-xs text-muted">Beliebt</span>
+            </div>
+            <p class="mt-3 text-sm text-muted">Wohnung, Haus, WG – sorgfältig tragen, sichern und platzieren.</p>
+            <ul class="mt-4 space-y-2 text-sm text-muted">
+              <li>• Schutzmaterial & Sicherung</li>
+              <li>• Tragehilfe / Möbel-Handling</li>
+              <li>• Optional: Ein- & Auspacken</li>
+            </ul>
+          </article>
+
+          <article class="rounded-3xl border border-line p-6 shadow-sm hover:shadow-soft transition-shadow">
+            <h3 class="text-lg font-semibold">Firmenumzug</h3>
+            <p class="mt-3 text-sm text-muted">Büro, Praxis, Lager – effiziente Umzüge mit minimaler Ausfallzeit.</p>
+            <ul class="mt-4 space-y-2 text-sm text-muted">
+              <li>• Terminplanung & Etappen</li>
+              <li>• IT/Arbeitsplätze (nach Absprache)</li>
+              <li>• Wochenende möglich</li>
+            </ul>
+          </article>
+
+          <article class="rounded-3xl border border-line p-6 shadow-sm hover:shadow-soft transition-shadow">
+            <h3 class="text-lg font-semibold">Transport</h3>
+            <p class="mt-3 text-sm text-muted">Einzelstücke, Möbel, Kleintransporte – schnell und zuverlässig.</p>
+            <ul class="mt-4 space-y-2 text-sm text-muted">
+              <li>• Abholung & Lieferung</li>
+              <li>• Tragehilfe</li>
+              <li>• Kurzfristige Termine</li>
+            </ul>
+          </article>
+
+          <article class="rounded-3xl border border-line p-6 shadow-sm hover:shadow-soft transition-shadow">
+            <h3 class="text-lg font-semibold">Möbelmontage</h3>
+            <p class="mt-3 text-sm text-muted">Auf- und Abbau von Möbeln – professionell und sauber.</p>
+            <ul class="mt-4 space-y-2 text-sm text-muted">
+              <li>• Schränke, Betten, Regale</li>
+              <li>• Küche nach Absprache</li>
+              <li>• Schrauben/Teile organisiert</li>
+            </ul>
+          </article>
+
+          <article class="rounded-3xl border border-line p-6 shadow-sm hover:shadow-soft transition-shadow">
+            <h3 class="text-lg font-semibold">Entrümpelung</h3>
+            <p class="mt-3 text-sm text-muted">Keller, Wohnung, Garage – mit klarer Absprache.</p>
+            <ul class="mt-4 space-y-2 text-sm text-muted">
+              <li>• Vorsortierung nach Wunsch</li>
+              <li>• Entsorgung/Abgabe (nach Absprache)</li>
+              <li>• Besenrein</li>
+            </ul>
+          </article>
+
+          <article class="rounded-3xl border border-line p-6 shadow-sm hover:shadow-soft transition-shadow">
+            <h3 class="text-lg font-semibold">Halteverbotszone</h3>
+            <p class="mt-3 text-sm text-muted">Organisation & Hinweise, damit alles reibungslos läuft.</p>
+            <ul class="mt-4 space-y-2 text-sm text-muted">
+              <li>• Bedarf klären</li>
+              <li>• Empfehlung: frühzeitig planen</li>
+              <li>• Optional über Partner</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ablauf -->
+    <section id="ablauf" class="border-t border-line">
+      <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-semibold tracking-tight">So läuft es ab</h2>
+        <p class="mt-2 text-muted">Vier Schritte – klar, einfach, nachvollziehbar.</p>
+
+        <div class="mt-10 grid gap-6 lg:grid-cols-4">
+          <div class="rounded-3xl border border-line p-6">
+            <div class="text-sm text-muted">Schritt 1</div>
+            <div class="mt-2 text-lg font-semibold">Anfrage</div>
+            <p class="mt-2 text-sm text-muted">Kurzformular ausfüllen oder anrufen. Wichtig: Etage, Aufzug, Laufwege.</p>
+          </div>
+          <div class="rounded-3xl border border-line p-6">
+            <div class="text-sm text-muted">Schritt 2</div>
+            <div class="mt-2 text-lg font-semibold">Angebot</div>
+            <p class="mt-2 text-sm text-muted">Transparente Kalkulation. Optional Besichtigung per Video/Foto.</p>
+          </div>
+          <div class="rounded-3xl border border-line p-6">
+            <div class="text-sm text-muted">Schritt 3</div>
+            <div class="mt-2 text-lg font-semibold">Umzugstag</div>
+            <p class="mt-2 text-sm text-muted">Sichern, tragen, laden – strukturiert und sorgfältig.</p>
+          </div>
+          <div class="rounded-3xl border border-line p-6">
+            <div class="text-sm text-muted">Schritt 4</div>
+            <div class="mt-2 text-lg font-semibold">Ankommen</div>
+            <p class="mt-2 text-sm text-muted">Abladen, platzieren, Montage nach Wunsch. Abschluss gemeinsam.</p>
+          </div>
+        </div>
+
+        <div class="mt-10 rounded-3xl border border-line p-6 sm:p-8">
+          <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+            <div>
+              <div class="text-lg font-semibold">Checkliste für ein genaues Angebot</div>
+              <p class="mt-2 text-sm text-muted">Diese Infos helfen uns, fair und präzise zu kalkulieren.</p>
+            </div>
+            <a href="#angebot" class="inline-flex items-center justify-center rounded-2xl bg-ink px-6 py-3 text-paper shadow-soft hover:opacity-90">
+              Jetzt anfragen
+            </a>
+          </div>
+          <div class="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3 text-sm text-muted">
+            <div class="rounded-2xl border border-line p-4">Start- & Zieladresse (PLZ)</div>
+            <div class="rounded-2xl border border-line p-4">Etage, Aufzug, Laufwege</div>
+            <div class="rounded-2xl border border-line p-4">Zimmeranzahl / Volumen</div>
+            <div class="rounded-2xl border border-line p-4">Möbel: Schrank/Betten/Küche</div>
+            <div class="rounded-2xl border border-line p-4">Haltezone / Parkmöglichkeit</div>
+            <div class="rounded-2xl border border-line p-4">Wunschdatum & Zeitfenster</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Preise -->
+    <section id="preise" class="border-t border-line">
+      <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+        <div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <h2 class="text-3xl font-semibold tracking-tight">Preisrahmen</h2>
+            <p class="mt-2 text-muted">Transparente Orientierung. Exakter Preis nach Infos / Besichtigung.</p>
+          </div>
+        </div>
+
+        <div class="mt-10 grid gap-6 lg:grid-cols-3">
+          <article class="rounded-3xl border border-line p-7">
+            <div class="text-sm text-muted">Basis</div>
+            <h3 class="mt-2 text-xl font-semibold">Kleintransport</h3>
+            <p class="mt-2 text-sm text-muted">Für einzelne Möbel / kurze Strecken.</p>
+            <div class="mt-6 text-3xl font-semibold">ab 99 €</div>
+            <ul class="mt-5 space-y-2 text-sm text-muted">
+              <li>• Abholung & Lieferung</li>
+              <li>• Sichern & Schutzmaterial</li>
+              <li>• 1–2 Helfer (nach Bedarf)</li>
+            </ul>
+          </article>
+
+          <article class="rounded-3xl border border-ink p-7 shadow-soft">
+            <div class="text-sm text-muted">Empfohlen</div>
+            <h3 class="mt-2 text-xl font-semibold">1–2 Zimmer Umzug</h3>
+            <p class="mt-2 text-sm text-muted">Typischer Wohnungsumzug innerhalb der Region.</p>
+            <div class="mt-6 text-3xl font-semibold">ab 399 €</div>
+            <ul class="mt-5 space-y-2 text-sm text-muted">
+              <li>• Tragen, laden, transportieren</li>
+              <li>• Basis-Montage (nach Absprache)</li>
+              <li>• Zeitfenster nach Planung</li>
+            </ul>
+          </article>
+
+          <article class="rounded-3xl border border-line p-7">
+            <div class="text-sm text-muted">Individuell</div>
+            <h3 class="mt-2 text-xl font-semibold">Komplettumzug</h3>
+            <p class="mt-2 text-sm text-muted">3+ Zimmer, Haus, Firmen – inkl. Montage/Entrümpelung möglich.</p>
+            <div class="mt-6 text-3xl font-semibold">Angebot</div>
+            <ul class="mt-5 space-y-2 text-sm text-muted">
+              <li>• Planung & Teamgröße</li>
+              <li>• Zusatzleistungen modular</li>
+              <li>• Besichtigung per Foto/Video</li>
+            </ul>
+          </article>
+        </div>
+
+        <p class="mt-6 text-sm text-muted">
+          Hinweis: Preise dienen nur als Orientierung. Faktoren wie Etage, Laufwege, Aufzug, Volumen und Zusatzleistungen beeinflussen den Endpreis.
+        </p>
+      </div>
+    </section>
+
+    <!-- Bewertungen -->
+    <section id="bewertungen" class="border-t border-line">
+      <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-semibold tracking-tight">Bewertungen</h2>
+        <p class="mt-2 text-muted">Beispieltexte – hier später echte Google/ProvenExpert Bewertungen einsetzen.</p>
+
+        <div class="mt-10 grid gap-6 lg:grid-cols-3">
+          <figure class="rounded-3xl border border-line p-7">
+            <blockquote class="text-sm text-muted">
+              “Pünktlich, sehr vorsichtig mit den Möbeln und super freundlich. Umzug war schneller als erwartet.”
+            </blockquote>
+            <figcaption class="mt-4 text-sm font-medium">Kundin, Privatumzug</figcaption>
+          </figure>
+          <figure class="rounded-3xl border border-line p-7">
+            <blockquote class="text-sm text-muted">
+              “Klare Absprachen, keine Überraschungen. Büro-Umzug am Wochenende – Montag lief alles wieder.”
+            </blockquote>
+            <figcaption class="mt-4 text-sm font-medium">Kunde, Firmenumzug</figcaption>
+          </figure>
+          <figure class="rounded-3xl border border-line p-7">
+            <blockquote class="text-sm text-muted">
+              “Montage vom Schrank sauber gemacht, Kartons ordentlich abgestellt. Absolut empfehlenswert.”
+            </blockquote>
+            <figcaption class="mt-4 text-sm font-medium">Kundin, Montage</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Angebot / Kontakt -->
+    <section id="angebot" class="border-t border-line">
+      <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+        <div class="grid gap-10 lg:grid-cols-2 lg:items-start">
+          <div>
+            <h2 class="text-3xl font-semibold tracking-tight">Angebot anfragen</h2>
+            <p class="mt-2 text-muted">
+              Schick uns kurz die wichtigsten Infos – wir melden uns schnell mit einem transparenten Angebot.
+            </p>
+
+            <div class="mt-8 rounded-3xl border border-line p-7">
+              <div class="text-sm font-medium">Direktkontakt</div>
+              <div class="mt-3 space-y-2 text-sm text-muted">
+                <div><span class="text-ink">Telefon:</span> <a class="hover:underline" href="tel:+4915208904469">0152 08904469</a></div>
+                <div><span class="text-ink">E-Mail:</span> <a class="hover:underline" href="mailto:info@umzugshelden.de">info@umzugshelden.de</a></div>
+                <div><span class="text-ink">Einsatzgebiet:</span> Karlsruhe & Umgebung (Beispieltext)</div>
+              </div>
+              <div class="mt-5 rounded-2xl bg-black/[0.03] p-4 text-sm text-muted">
+                Pro-Tipp: Fotos (Treppenhaus, Möbel, Parkplatzsituation) machen Angebote deutlich genauer.
+              </div>
+            </div>
+          </div>
+
+          <div id="kontakt" class="rounded-3xl border border-line p-7 shadow-soft">
+            <form id="requestForm" class="space-y-4">
+              <div class="grid gap-4 sm:grid-cols-2">
+                <div>
+                  <label class="text-sm font-medium" for="name">Name</label>
+                  <input class="mt-1 w-full rounded-2xl border border-line px-4 py-3 outline-none focus:ring-2 focus:ring-black/10" id="name" name="name" placeholder="Max Mustermann" required />
+                </div>
+                <div>
+                  <label class="text-sm font-medium" for="phone">Telefon</label>
+                  <input class="mt-1 w-full rounded-2xl border border-line px-4 py-3 outline-none focus:ring-2 focus:ring-black/10" id="phone" name="phone" placeholder="0151 1234567" />
+                </div>
+              </div>
+
+              <div>
+                <label class="text-sm font-medium" for="email">E-Mail</label>
+                <input class="mt-1 w-full rounded-2xl border border-line px-4 py-3 outline-none focus:ring-2 focus:ring-black/10" id="email" name="email" type="email" placeholder="name@mail.de" required />
+              </div>
+
+              <div class="grid gap-4 sm:grid-cols-2">
+                <div>
+                  <label class="text-sm font-medium" for="from">Von (PLZ/Ort)</label>
+                  <input class="mt-1 w-full rounded-2xl border border-line px-4 py-3 outline-none focus:ring-2 focus:ring-black/10" id="from" name="from" placeholder="76133 Karlsruhe" />
+                </div>
+                <div>
+                  <label class="text-sm font-medium" for="to">Nach (PLZ/Ort)</label>
+                  <input class="mt-1 w-full rounded-2xl border border-line px-4 py-3 outline-none focus:ring-2 focus:ring-black/10" id="to" name="to" placeholder="76227 Karlsruhe" />
+                </div>
+              </div>
+
+              <div class="grid gap-4 sm:grid-cols-2">
+                <div>
+                  <label class="text-sm font-medium" for="date">Wunschtermin</label>
+                  <input class="mt-1 w-full rounded-2xl border border-line px-4 py-3 outline-none focus:ring-2 focus:ring-black/10" id="date" name="date" type="date" />
+                </div>
+                <div>
+                  <label class="text-sm font-medium" for="service">Leistung</label>
+                  <select class="mt-1 w-full rounded-2xl border border-line px-4 py-3 outline-none focus:ring-2 focus:ring-black/10" id="service" name="service">
+                    <option>Privatumzug</option>
+                    <option>Firmenumzug</option>
+                    <option>Transport</option>
+                    <option>Möbelmontage</option>
+                    <option>Entrümpelung</option>
+                    <option>Sonstiges</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label class="text-sm font-medium" for="details">Details</label>
+                <textarea class="mt-1 min-h-[120px] w-full rounded-2xl border border-line px-4 py-3 outline-none focus:ring-2 focus:ring-black/10" id="details" name="details" placeholder="Etage, Aufzug, Laufwege, Möbel (z.B. Schrank 2m), Kartons, Haltezone..." required></textarea>
+              </div>
+
+              <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                <button class="inline-flex items-center justify-center rounded-2xl bg-ink px-6 py-3 text-paper shadow-soft hover:opacity-90" type="submit">
+                  Anfrage vorbereiten
+                </button>
+                <p class="text-xs text-muted">
+                  Hinweis: Das Formular sendet keine Daten automatisch. Es erstellt eine E-Mail-Vorlage (mailto).
+                </p>
+              </div>
+
+              <div id="formMsg" class="hidden rounded-2xl border border-line bg-black/[0.03] p-4 text-sm text-muted"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-line">
+      <div class="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+        <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+          <div class="flex items-center gap-3">
+            <img src="./assets/logo.jpeg" alt="Logo" class="h-10 w-10 rounded-full border border-line object-cover" />
+            <div>
+              <div class="font-semibold">Umzugshelden Kerem</div>
+              <div class="text-sm text-muted">Umzüge • Transport • Montage</div>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-3 text-sm text-muted">
+            <a class="hover:underline" href="#leistungen">Leistungen</a>
+            <span class="text-ink/20">•</span>
+            <a class="hover:underline" href="#ablauf">Ablauf</a>
+            <span class="text-ink/20">•</span>
+            <a class="hover:underline" href="#preise">Preise</a>
+            <span class="text-ink/20">•</span>
+            <a class="hover:underline" href="#kontakt">Kontakt</a>
+          </div>
+        </div>
+
+        <div class="mt-8 grid gap-4 text-xs text-muted md:grid-cols-2">
+          <div class="rounded-2xl border border-line p-4">
+            <div class="font-medium text-ink">Impressum</div>
+            <p class="mt-1">Platzhalter – Unternehmensdaten ergänzen (Adresse, Inhaber, USt-ID, etc.).</p>
+          </div>
+          <div class="rounded-2xl border border-line p-4">
+            <div class="font-medium text-ink">Datenschutz</div>
+            <p class="mt-1">Platzhalter – Datenschutzhinweise ergänzen (Kontaktformular, Tracking, etc.).</p>
+          </div>
+        </div>
+
+        <div class="mt-8 text-xs text-muted">
+          © <span id="year"></span> Umzugshelden Kerem. Alle Rechte vorbehalten.
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- App JS (Tailwind config + interactions) -->
+  <script src="./js/main.js"></script>
+</body>
+</html>
