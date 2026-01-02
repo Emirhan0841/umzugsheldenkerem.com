@@ -1,29 +1,68 @@
-<footer class="border-t border-line">
-  <div class="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
-    <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-      <div class="flex items-center gap-3">
-        <img src="/assets/logo.jpeg" alt="Logo" class="h-10 w-10 rounded-full border border-line object-cover" />
-        <div>
-          <div class="font-semibold">Umzugshelden Kerem</div>
-          <div class="text-sm text-muted">Umzüge • Transport • Montage</div>
+<!-- Footer -->
+      <footer class="border-t border-line">
+        <div class="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+          <div
+            class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between"
+          >
+            <div class="flex items-center gap-3">
+              <img
+                src="./assets/logo.jpeg"
+                alt="Logo"
+                class="h-10 w-10 rounded-full border border-line object-cover"
+              />
+              <div>
+                <div class="font-semibold">Umzugshelden Kerem</div>
+                <div class="text-sm text-muted">
+                  Umzüge • Transport • Entrümpelung
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap gap-3 text-sm text-muted">
+              <a class="hover:underline" href="#leistungen">Leistungen</a>
+              <span class="text-ink/20">•</span>
+              <a class="hover:underline" href="#ablauf">Ablauf</a>
+              <span class="text-ink/20">•</span>
+              <a class="hover:underline" href="#preise">Preise</a>
+              <span class="text-ink/20">•</span>
+              <a class="hover:underline" href="#kontakt">Kontakt</a>
+            </div>
+          </div>
+
+          <div class="mt-8 grid gap-4 text-xs text-muted md:grid-cols-2">
+            <div class="rounded-2xl border border-line p-4">
+              <div class="font-medium text-ink">Impressum</div>
+              <p class="mt-1">
+                Rechtliche Informationen, Kontakt und Verantwortliche
+              </p>
+              <button
+                id="openImpressum"
+                type="button"
+                class="mt-3 inline-flex items-center justify-center rounded-2xl border border-line px-4 py-2 text-xs text-ink hover:bg-black/[0.03]"
+              >
+                Impressum ansehen
+              </button>
+            </div>
+            <div class="rounded-2xl border border-line p-4">
+              <div class="font-medium text-ink">Datenschutz</div>
+              <p class="mt-1">
+                Platzhalter – Datenschutzhinweise ergänzen (Kontaktformular,
+                Tracking, etc.).
+              </p>
+              <button
+                id="openDatenschutz"
+                type="button"
+                class="mt-3 inline-flex items-center justify-center rounded-2xl border border-line px-4 py-2 text-xs text-ink hover:bg-black/[0.03]"
+              >
+                Datenschutz ansehen
+              </button>
+            </div>
+          </div>
+
+          <div class="mt-8 text-xs text-muted">
+            © <span id="year"></span> Umzugshelden Kerem. Alle Rechte
+            vorbehalten.
+          </div>
         </div>
-      </div>
-
-      <div class="flex flex-wrap gap-3 text-sm text-muted">
-        <a class="hover:underline" href="/pages/leistungen.html">Leistungen</a>
-        <span class="text-ink/20">•</span>
-        <a class="hover:underline" href="/pages/preise.html">Preise</a>
-        <span class="text-ink/20">•</span>
-        <a class="hover:underline" href="/pages/kontakt.html">Kontakt</a>
-        <span class="text-ink/20">•</span>
-        <a class="hover:underline" href="/pages/rechtliches/impressum.html">Impressum</a>
-        <span class="text-ink/20">•</span>
-        <a class="hover:underline" href="/pages/rechtliches/datenschutz.html">Datenschutz</a>
-      </div>
-    </div>
-
-    <div class="mt-8 text-xs text-muted">
-      © <span id="year"></span> Umzugshelden Kerem. Alle Rechte vorbehalten.
-    </div>
-  </div>
-</footer>
+      </footer>
+    

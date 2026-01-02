@@ -1,3 +1,22 @@
+async function loadPartials() {
+  const nodes = Array.from(document.querySelectorAll("[data-include]"));
+  await Promise.all(
+    nodes.map(async (node) => {
+      const url = node.getAttribute("data-include");
+      if (!url) return;
+      try {
+        const res = await fetch(url, { cache: "no-cache" });
+        if (!res.ok) throw new Error(`Failed to load ${url}`);
+        const html = await res.text();
+        node.outerHTML = html;
+      } catch (err) {
+        console.warn(`Include failed: ${url}`, err);
+      }
+    })
+  );
+}
+
+function initSite() {
 // Tailwind config (CDN)
 tailwind.config = {
   theme: {
@@ -81,3 +100,109 @@ ${name || ""}`.trim();
 
   msg.scrollIntoView({ behavior: "smooth", block: "center" });
 });
+
+
+// Impressum modal
+const openImpressum = document.getElementById("openImpressum");
+const impressumModal = document.getElementById("impressumModal");
+const closeImpressum = document.getElementById("closeImpressum");
+
+function setImpressum(open) {
+  if (!impressumModal) return;
+  impressumModal.classList.toggle("hidden", !open);
+  impressumModal.setAttribute("aria-hidden", String(!open));
+  document.body.classList.toggle("overflow-hidden", open);
+  if (open) {
+    closeImpressum?.focus();
+  } else {
+    openImpressum?.focus();
+  }
+}
+
+openImpressum?.addEventListener("click", () => setImpressum(true));
+closeImpressum?.addEventListener("click", () => setImpressum(false));
+
+impressumModal?.addEventListener("click", (event) => {
+  const target = event.target;
+  if (target && target.matches("[data-modal-close]")) {
+    setImpressum(false);
+  }
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && !impressumModal?.classList.contains("hidden")) {
+    setImpressum(false);
+  }
+});
+
+
+// Cookie banner
+const cookieBanner = document.getElementById("cookieBanner");
+const cookieAccept = document.getElementById("cookieAccept");
+const cookieDecline = document.getElementById("cookieDecline");
+const cookieKey = "cookieConsent";
+
+function setCookieBanner(visible) {
+  if (!cookieBanner) return;
+  cookieBanner.classList.toggle("hidden", !visible);
+  cookieBanner.setAttribute("aria-hidden", String(!visible));
+  document.body.classList.toggle("overflow-hidden", visible);
+}
+
+if (cookieBanner) {
+  const stored = localStorage.getItem(cookieKey);
+  if (!stored) setCookieBanner(true);
+}
+
+cookieAccept?.addEventListener("click", () => {
+  localStorage.setItem(cookieKey, "accepted");
+  setCookieBanner(false);
+});
+
+cookieDecline?.addEventListener("click", () => {
+  localStorage.setItem(cookieKey, "necessary");
+  setCookieBanner(false);
+});
+
+
+// Datenschutz modal
+const openDatenschutz = document.getElementById("openDatenschutz");
+const datenschutzModal = document.getElementById("datenschutzModal");
+const closeDatenschutz = document.getElementById("closeDatenschutz");
+
+function setDatenschutz(open) {
+  if (!datenschutzModal) return;
+  datenschutzModal.classList.toggle("hidden", !open);
+  datenschutzModal.setAttribute("aria-hidden", String(!open));
+  document.body.classList.toggle("overflow-hidden", open);
+  if (open) {
+    closeDatenschutz?.focus();
+  } else {
+    openDatenschutz?.focus();
+  }
+}
+
+openDatenschutz?.addEventListener("click", () => setDatenschutz(true));
+closeDatenschutz?.addEventListener("click", () => setDatenschutz(false));
+
+datenschutzModal?.addEventListener("click", (event) => {
+  const target = event.target;
+  if (target && target.matches("[data-modal-close]")) {
+    setDatenschutz(false);
+  }
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && !datenschutzModal?.classList.contains("hidden")) {
+    setDatenschutz(false);
+  }
+});
+
+}
+
+loadPartials()
+  .then(initSite)
+  .catch((err) => {
+    console.warn("Partial load failed", err);
+    initSite();
+  });
