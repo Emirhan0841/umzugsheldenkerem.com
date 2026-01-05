@@ -41,6 +41,19 @@ menuBtn?.addEventListener("click", () => {
   mobileMenu.classList.toggle("hidden");
 });
 
+// Smooth scroll for in-page links
+document.addEventListener("click", (event) => {
+  const link = event.target.closest("a[href^=\"#\"]");
+  if (!link) return;
+  const hash = link.getAttribute("href");
+  if (!hash || hash.length < 2) return;
+  const target = document.querySelector(hash);
+  if (!target) return;
+  event.preventDefault();
+  target.scrollIntoView({ behavior: "smooth", block: "start" });
+  history.pushState(null, "", hash);
+});
+
 // Footer year
 const yearEl = document.getElementById("year");
 if (yearEl) yearEl.textContent = new Date().getFullYear();
